@@ -24,16 +24,18 @@ public class ClienteTCP {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 
 		String opcion;
-		//El usuario ingresara una opcion, si es la 4 acabara la comunicación
+		// El usuario ingresara una opcion, si es la 4 acabara la comunicación
 		try {
 			boolean sw = true;
 			// Desplegamos el menu de opciones
-			System.out.println("\n\tMENU");
-			System.out.println("1. Opcion 1");
-			System.out.println("2. Opcion 2");
-			System.out.println("3. Opcion 3");
-			System.out.println("4. Salir");
+
 			while (sw) {
+				System.out.println("\n\n\tMENU");
+				System.out.println("1. Opcion 1");
+				System.out.println("2. Opcion 2");
+				System.out.println("3. Opcion 3");
+				System.out.println("4. Salir");
+				System.out.println("\nIngrese una opcion: ");
 				// Leo la entrada del usuario
 				opcion = leer.readLine();
 				// La envia al servidor
@@ -44,7 +46,7 @@ public class ClienteTCP {
 				} else {
 					opcion = entrada.readLine();
 					// Mostramos la respuesta del servidor
-					System.out.println("Respuesta servidor: " + opcion);
+					System.out.println("-----> Respuesta servidor: " + opcion);
 				}
 			}
 		} catch (IOException e) {

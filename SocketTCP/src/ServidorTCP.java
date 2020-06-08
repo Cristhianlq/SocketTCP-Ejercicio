@@ -55,15 +55,15 @@ public class ServidorTCP {
 						switch (opcion) {
 						case "1":
 							System.out.println("selecciono la opcion 1");
-							resp = "papel";
+							resp = "Papel";
 							break;
 						case "2":
 							System.out.println("selecciono la opcion 2");
-							resp = "piedra";
+							resp = "Piedra";
 							break;
 						case "3":
 							System.out.println("selecciono la opcion 3");
-							resp = "tijera";
+							resp = "Tijera";
 							break;
 						default:
 							System.out.println("selecciono numeros mayores a 4");
