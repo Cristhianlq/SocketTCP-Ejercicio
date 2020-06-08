@@ -24,9 +24,7 @@ public class ClienteTCP {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 
 		String opcion;
-		// El programa cliente no analiza los mensajes enviados por el
-		// usario, simplemente los reenvía al servidor hasta que este
-		// se despide con "Adios"
+		//El usuario ingresara una opcion, si es la 4 acabara la comunicación
 		try {
 			boolean sw = true;
 			// Desplegamos el menu de opciones
