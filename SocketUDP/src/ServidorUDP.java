@@ -1,4 +1,5 @@
 import java.net.*;
+import java.util.StringTokenizer;
 import java.io.*;
 
 public class ServidorUDP {
@@ -10,15 +11,8 @@ public class ServidorUDP {
 	}
 
 	public static int contarPalabras(String cad) {
-		int tam = cad.length();
-		if (tam == 0)
-			return 0;
-		int c = 1;
-		for (int i = 0; i < tam; i++) {
-			if (cad.charAt(i) == ' ')
-				c++;
-		}
-		return c;
+		StringTokenizer st = new StringTokenizer(cad);
+		return st.countTokens();
 	}
 
 	public static void main(String args[]) {
